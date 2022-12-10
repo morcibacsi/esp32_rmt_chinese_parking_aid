@@ -4,7 +4,7 @@
 
 This is a ESP32 RMT peripheral based decoder for this specific Chinese parking aid:
 
-![device](https://github.com/morcibacsi/esp32_rmt_chinese_parking_aid/raw/master/extras/chinese_car_parking_aid.webp)
+![device](https://github.com/morcibacsi/esp32_rmt_chinese_parking_aid/raw/master/extras/chinese_parking_aid_product.webp)
 
 It has four sensors and a small display for showing the distance. The accuracy of the parking aid is 10 cm. The maximum distance it can measure is 240 cm and the minimum is 30 cm, below that it sends 0 cm. 
 
@@ -36,7 +36,7 @@ The header is followed by the readings from the sensors in the following order: 
 
 I connected pin 21 of the ESP32 to the display on the SIGNAL wire marked on the picture above (and of course grounds should be also connected)
 
-![schema](https://github.com/morcibacsi/esp32_rmt_chinese_parking_aid/raw/master/extras/chinese_parking_aid_esp32.jpg
+![schema](https://github.com/morcibacsi/esp32_rmt_chinese_parking_aid/raw/master/extras/chinese_parking_aid_esp32.jpg)
 
 ## Example
 
