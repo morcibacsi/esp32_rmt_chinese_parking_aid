@@ -14,16 +14,16 @@ The internals looks like this:
 ## Protocol
 
 It uses a simple protocol which uses a single wire (marked as SIGNAL, with yellow color on the picture above). 
-There is an inter-frame sequence which is a 226ms long low signal. If is followed by a header which consist of a 1.9 ms high and 1.0 ms low signal. A zero bit is represented by 205 µs low signal followed by a 104 µs of high signal. A one bit is represented by 104 µs low signal followed by a 205 µs high signal.
+There is an inter-frame sequence which is a 226ms long low signal. If is followed by a header which consist of a 1.9 ms high and 1.0 ms low signal. A zero bit is represented by 205 Âµs low signal followed by a 104 Âµs of high signal. A one bit is represented by 104 Âµs low signal followed by a 205 Âµs high signal.
 
     <     IFS    ><                   Header                     ><        0           ><          1         >
                   +---------------------+                 +------+              +------+      +--------------+
-                  ¦                     ¦                 ¦      ¦              ¦      ¦      ¦              ¦
-                  ¦                     ¦                 ¦      ¦              ¦      ¦      ¦              ¦
-        226 ms    ¦       1.9 ms        ¦      1.0 ms     ¦104 µs¦    205 µs    ¦104 µs¦104 µs¦    205 µs    ¦
-                  ¦                     ¦                 ¦      ¦              ¦      ¦      ¦              ¦
-                  ¦                     ¦                 ¦      ¦              ¦      ¦      ¦              ¦
-                  ¦                     ¦                 ¦      ¦              ¦      ¦      ¦              ¦
+                  Â¦                     Â¦                 Â¦      Â¦              Â¦      Â¦      Â¦              Â¦
+                  Â¦                     Â¦                 Â¦      Â¦              Â¦      Â¦      Â¦              Â¦
+        226 ms    Â¦       1.9 ms        Â¦      1.0 ms     Â¦104 ÂµsÂ¦    205 Âµs    Â¦104 ÂµsÂ¦104 ÂµsÂ¦    205 Âµs    Â¦
+                  Â¦                     Â¦                 Â¦      Â¦              Â¦      Â¦      Â¦              Â¦
+                  Â¦                     Â¦                 Â¦      Â¦              Â¦      Â¦      Â¦              Â¦
+                  Â¦                     Â¦                 Â¦      Â¦              Â¦      Â¦      Â¦              Â¦
     --------------+                     +-----------------+      +--------------+      +------+              +--------
     
 ![protocol](https://github.com/morcibacsi/esp32_rmt_chinese_parking_aid/raw/master/extras/chinese_parking_aid_protocol.png)
@@ -108,8 +108,6 @@ void loop()
 ![output](https://github.com/morcibacsi/esp32_rmt_chinese_parking_aid/raw/master/extras/chinese_parking_aid_arduino_output.jpg)
 
 ## Installation
-
-You need to install the official STM32 core based on the info from here: 
 
 Copy the following files to your **documents\Arduino\libraries\esp32_rmt_chinese_parking_aid** folder
 
